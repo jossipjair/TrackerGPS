@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Controlador.Configuracion">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Registro Teléfono Administrador"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAzul"
+        android:id="@+id/lblRegistroContacto" />
+
+    <TextView
+        android:id="@+id/lblDetalleContacto"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/lblRegistroContacto"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorCeleste"
+        android:text="Descripción de Teléfono"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+
+        android:id="@+id/txtNumeroTelefonoAdmin"
+        android:layout_below="@id/lblDetalleContacto"
+        android:hint="Número Teléfono"
+        android:inputType="number"
+        android:gravity="center"
+        android:maxLength="9"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtNombreContactoAdmin"
+        android:layout_below="@id/txtNumeroTelefonoAdmin"
+        android:hint="Nombre de Contacto"
+        android:text="ADMINISTRADOR"
+        android:inputType="textCapCharacters"
+        android:layout_marginTop="10dp"
+        android:maxLength="20"
+        android:enabled="false"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnGuardarContactoAdmin"
+        android:layout_below="@+id/txtNumeroTelefonoAdmin"
+        android:text="Guardar Teléfono"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorAzul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

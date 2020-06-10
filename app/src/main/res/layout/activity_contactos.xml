@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.Contactos">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Registro Contacto"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAzul"
+        android:id="@+id/lblRegistroContacto" />
+
+    <TextView
+        android:id="@+id/lblDetalleContacto"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/lblRegistroContacto"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorCeleste"
+        android:text="Descripción de Contacto"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+
+        android:id="@+id/txtNumeroTelefono"
+        android:layout_below="@id/lblDetalleContacto"
+        android:hint="Número Teléfono"
+        android:inputType="number"
+        android:maxLength="9"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtNombreContacto"
+        android:layout_below="@id/txtNumeroTelefono"
+        android:hint="Nombre de Contacto"
+        android:inputType="textCapCharacters"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:maxLength="20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnGuardarContacto"
+        android:layout_below="@+id/txtNombreContacto"
+        android:text="Guardar Contacto"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorAzul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/gvContactos"
+        android:layout_below="@+id/btnGuardarContacto"
+        android:layout_marginTop="20dp"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
